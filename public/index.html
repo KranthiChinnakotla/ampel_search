@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+     <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+    <title>Ampel Gene Selection</title>   
+    <style>
+        #searchbody h1,h3{
+            color:green;
+            font-family: fantasy;
+            font-weight: bold;
+            text-align: justify;
+        }
+        
+        label,input{
+            color:green;
+            font-family: fantasy;
+            font-weight: bold;
+            text-align: justify;
+            font-size: 150%;
+            
+            
+            
+        }
+        .img-responsive{
+            margin: 0 auto;
+            
+        }
+        #srch{
+            margin-left: inherit;
+            
+        }
+        
+      
+        
+        
+        #btextsearch,#btextreset,.list-group-item list-group-item-success{
+            font-family: fantasy
+        }
+        
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                <script>
+  
+                $(document).ready(function(){
+                    $(function(){
+       var availableTags = [
+      "FTase",
+"mTOR",
+"PI3K",
+"IGF-1R",
+"PIK3",
+"Ca2+",
+"TrkA kinase, LRRK2",
+"BRAF",
+"iNOS",
+"Carbonic anhydrase II",
+"CDK",
+"Calpain",
+"COX-1",
+"DNA-PK",
+"protein synthesis",
+"5HT-1A patial agonist",
+"AKR",
+"glucocorticoid",
+"HER2",
+"RAR agonist",
+"IKK",
+"corticosteroid",
+"ATM kinase",
+"NMPRTase",
+"K channel",
+"JAK",
+"PLC activator",
+"BMK1/Erk5",
+"5HT",
+"ErbB",
+"MDMX",
+"EGF",
+"adrenergic agonist",
+"GABA",
+"p110",
+"K+",
+"CYP17A1",
+"D2 and D3 agonist",
+"Histamine H1",
+"SSRI",
+"casein kinase II",
+"beta 2 agonist",
+"ATP synthase",
+"GABA-A",
+"PPAR",
+"PDE",
+"selective mGlu1",
+"RAR_2 agonist",
+"PARP1",
+"Syk ",
+"NK1",
+"seratonin receptor",
+"src kinase",
+"Aurora kinases",
+"PTP",
+"MEK",
+"Tyrosine kinase",
+"PARP",
+"MEK1,2",
+"Beta blocker",
+"CAMKK",
+"MEK1/2",
+"adenosine reuptake",
+"Fabl",
+"IMPA",
+"NMDA receptor",
+"PP1",
+"Hdm2 ubiqitin ligase",
+"ALK",
+"5HT2A",
+"AMPK",
+"EPHA7",
+"myosin II",
+"PGI2",
+"SGLT1/SGLT2",
+"Rho-Kinase",
+"aminopeptidase-B",
+"Ca channel",
+"_2 adrenoreceptor agonist",
+"statin",
+"TNF_",
+"benzodiazepine receptor agonist",
+"RARs activator",
+"5-HT4",
+"Na channel",
+"IMP",
+"beta3 adrenergic",
+"CDK5,CDK2",
+"PAF",
+"PDGFR",
+"soluble adenylyl cyclase",
+"Calceineurin",
+"MLCK",
+"HIF-_",
+"PKC delta",
+"GHS-R1a agonist",
+"Factor XA",
+"MMP",
+"STAT1",
+"androgen-receptor",
+"seratonin agonist",
+"HMG-CoA",
+"COX",
+"fatty acyl CoA synthetase",
+"BCL2",
+"IGF1R",
+"ACE",
+"FKBP12",
+"PPAR-alpha agonist",
+"CB2 agonist",
+"SERCA ATPase",
+"EPHA3",
+"Kinase",
+"GSK3",
+"carbonic anhydrase",
+"cyclooxygenase",
+"CXCR2",
+"DPP-4",
+"angiogenesis",
+"_2 adrenergic agonist",
+"integrase",
+"MIF",
+"STIM1",
+"steroid",
+"MAOI",
+"GnRH agonist",
+"ROCK1",
+"CCR2",
+"GLI",
+"Folate inhib",
+"topoisomerase II",
+"Dopamine D2",
+"androgen receptor",
+"DCAMKL1",
+"Peripheral acetylcholinesterase",
+"SERM",
+"ergosterol synthesis",
+"adrenergic receptor",
+"HDAC6",
+"NLRP3 Inflammasome",
+"Nur 77 agonist",
+"ATPases",
+"CB1",
+"SIRT1",
+"amyloid _42",
+"DRI",
+"TRPV1",
+"_7 nicotinic-acetylcholine modulator",
+"_1 agonist",
+"Src family kinase",
+"Akt",
+"5HT-6",
+"dopamine D1",
+"DNMT1",
+"sigma receptor",
+"EGF tyrosine kinase",
+"proton pump",
+"Dopamine receptor",
+"PKC",
+"Dihydrofolate Reductase",
+"MNK",
+"carnitine palmitoyltransferase ",
+"ROCK",
+"NK3",
+"PAR1",
+"Chk",
+"MAPK",
+"PBR",
+"protease",
+"eIF2_ phosphatase",
+"GABA B modulator",
+"alpha receptor",
+"5-HT6",
+"EGFR",
+"NFKB",
+"SARI",
+"telomerase",
+"anandamide uptake",
+"AChR agonist ",
+"5 HT -1D",
+"_2B-AR adrenoceptor",
+"PGE2",
+"HMG-CoA reductase ",
+"PPAR-_ agonist",
+"cellular uptake of AEA",
+"CB1 agonist",
+"VEGFR2",
+"p38 MAP kinase",
+"5-HT",
+"p38_ and p38_2",
+"mitochondrial electron transport",
+"estrogen",
+"GABA uptake",
+"5_-reductase",
+"flavanoid",
+"ErbB1/Her1",
+"PKC_II",
+"Angiotensin II",
+"alpha 1B adrenoreceptor",
+"PLK1,3",
+"5-HT2B",
+"PDK1",
+"_3 adrenoreceptor agonist",
+"CCK1",
+"SK1",
+"DNMT",
+"MEK1",
+"GHB receptor",
+"Dopamine D2,D3",
+"protein transport",
+"GABA A modulator",
+"LTD4",
+"Wnt/beta-catenin",
+"mGlu5",
+"CDK2, GSK3-beta",
+"PTK",
+"VSAC",
+"FGFR",
+"thymidylate synthase ",
+"estrogen derivative",
+"PI3K_",
+"5 alpha reductase",
+"WNT/_-catenin pathway",
+"steroidal progestin",
+"FAAH",
+"TGF beta/Smad",
+"PDE3",
+"Opioid",
+"MMP13",
+"Aurora A",
+"ARK",
+"GABA modulator",
+"P2X1",
+"PDE4",
+"adenyly cyclase",
+"PPAR_ agonist",
+"CETP",
+"Xanthine oxidase",
+"NPY1-R",
+"ALDH2 activator",
+"Kinases",
+"PDE6",
+"beta-2-agonist",
+"Seratonin",
+"p38 MAPK",
+"estrogen receptor",
+"TXB2",
+"HIF-1 alpha",
+"Hsp90",
+"JNK",
+"phosphodiesterase",
+"Bcl-2",
+"5HT1",
+"selective sst4 agonist",
+"Ca channel ",
+"immunomodulator",
+"__ adreno agonist",
+"KinomeScan Kinase",
+"Alpha-1 adrenergic",
+"5-HT2A",
+"norepnephrine reuptake",
+"DOPA decarboxylase",
+"ETV1",
+"M5 receptor modulator",
+"ATM",
+"HMG-CoA reductase",
+"LRRK2",
+"5HT-2",
+"Ophthalmic muscarinic",
+"Viral nucleoside",
+"cytochrome P450",
+"Raf-1 Kinase",
+"GABA A ",
+"Aurora C ATP",
+"Ca channel activator",
+"_1-adrenergicÊ",
+"muscarinic acetylcholine M4",
+"Histamine H3",
+"_1A adrenergic agonist",
+"Ca channel agonist",
+"oxytocin receptor",
+"GABA A",
+"PDE1",
+"5-HT1E, 1F agonist",
+"D2 receptor",
+"HMGCoA reductase",
+"HDAC",
+"Dopamine agonist",
+"S1P2",
+"Dopamine 4",
+"VEGFR3",
+"PKA",
+"Beta-1 agonist",
+"NCX1",
+"TXAS",
+"Adenosine A2 agonist",
+"Bcr-Abl/Src",
+"Histamine 2 receptor",
+"_3-adrenergic agonist",
+"CaM",
+"HSP70",
+"GPR40",
+"PDE - 5",
+"_-secretase",
+"NNRTI",
+"acyl-CoA synthetase",
+"P-glycoprotein",
+"Seratonin 3",
+"Glutamate",
+"BKCa channel activator",
+"IKK/TNF",
+"selective hA3 ",
+"PIM1 Kinase",
+"VEGF",
+"S-farnesylcysteine methyl transferase "];
+     $(".form-control").autocomplete({source: availableTags});
+        
+    });
+                    
+                    
+                    $(function(){$(document).on("click","#reset",function(){
+                        
+                            $('#drugs_list').html('');
+                        
+                    });
+                        
+                        
+                    });
+                    
+                    
+                    $(function(){$(document).on("click","#srch",function(){
+
+                        var target_value = $('#input_target').val()
+                        if(target_value == ''){
+                            alert("The target is not entered");
+                            
+                        }
+                        $.ajax({
+
+                            type: 'GET',
+                            dataType: 'json',
+                            url: 'http://34.196.18.237:9000/drugs?target='+target_value,
+                            success: function (data) {
+                                $('#drugs_list').html('');
+                                $.each(data,function(i,drug){
+                                   $('#drugs_list').append('<li style="font-family: cursive;font-size: 150%;" class="list-group-item list-group-item-success">'+drug.drug_name+'</li>') 
+                                });
+                            }
+
+                        });
+
+
+                    });});
+                    
+                 
+                });
+    
+    </script>
+    
+        
+    
+</head>
+    <body id="searchbody">
+    
+    <div class="container">
+        
+        <div class="well well-lg">
+            
+            <div id="img">
+                <img src="ampel.png" class="img-responsive img-rounded"> 
+            
+            </div>
+            </br>
+        </br>
+            <h3 class="text-center" >Drug Search</h3>
+            </b>
+            <label>Search :  </label>
+            <input type="text" id="input_target" class="form-control" placeholder="Enter atleast one character in the target name, to search drugs">
+        </br>
+        
+        <button type="button" id="srch" class="btn btn-success"><span id="btextsearch">Search Drugs</span></button>
+        <button type="button" id="reset" class="btn btn-info"><span id="btextreset">Reset</span></button>
+            
+        </div>
+    
+    <div class="well well-lg">
+        <ul id="drugs_list" class="list-group">
+        
+        
+        </ul>
+        
+        </div>
+    </body>
+
+
+</html>
+
