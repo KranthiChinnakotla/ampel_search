@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: fileupload
+Implementation-Version: 0.0.1
+Built-By: Prathyusha
+Implementation-Vendor-Id: edu.medha.
+Build-Jdk: 1.8.0_91
+Implementation-URL: http://maven.apache.org
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
