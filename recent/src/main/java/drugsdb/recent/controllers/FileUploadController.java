@@ -16,7 +16,8 @@ public class FileUploadController {
 
 	public static final String uploadingdir = /*
 												 * System.getProperty("user.dir")
-												 */"C:\\Users\\kchinnak\\Desktop" + "/uploadingdir/";
+												 "C:\\Users\\kchinnak\\Desktop" + "/uploadingdir/";*/
+			"/home/ec2-user"+ "/uploadingdir/";
 	public static  String filePath = null;
 	private static final Logger LOG = LoggerFactory.getLogger(FileUploadController.class);
 
