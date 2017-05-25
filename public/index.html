@@ -34,6 +34,9 @@
             margin-left: inherit;
             
         }
+        #batchaction{
+            font-size: 150%
+        }
         
       
         
@@ -48,506 +51,32 @@
                 <script>
   
                                                      var availableDrugs = [
-           "VEMURAFENIB",
-"ERLOTINIB",
-"PAZOPANIB",
-"SORAFENIB",
-"LAPATINIB",
-"GEFITINIB",
-"SUNITINIB",
-"PANOBINOSTAT",
-"ROSIGLITAZONE",
-"ELIGLUSTAT",
-"TAMOXIFEN",
-"SIROLIMUS",
-"BELINOSTAT",
-"ATORVASTATIN",
-"ROSUVASTATIN",
-"PRAVASTATIN",
-"SIMVASTATIN",
-"PALBOCICLIB",
-"CARFILZOMIB",
-"RUXOLITINIB",
-"FINGOLIMOD",
-"RESVERATROL",
-"VORINOSTAT",
-"NA",
-"BIBR-1532",
-"ADENOSINE",
-"CGS15943A",
-"CGS21680C",
-"DPCPX",
-"IB-MECA",
-"NECA",
-"SCH 58261",
-"UCS15A",
-"XANTHINE AMINE CONGENER ",
-"ZM 241385",
-"LISOFYLLINE",
-"COENZYME A",
-"ETOMOXIR",
-"UDP-GLUCOSE",
-"URIDINE DIPHOSPHATE",
-"EX-527",
-"GLUCOSYL",
-"AGN-PC-0NIIWQ",
-"MANGANESE",
-"PHOSPHATE",
-"SUCROSE",
-"SULPHATE",
-"MGADP",
-"MGATP",
-"TOZASERTIB",
-"ENMD-2076",
-"KIN001-220",
-"ZM-447439",
-"HESPERIDIN",
-"GSK-1070916",
-"TPCA-1",
-"ACETYLLYSINE",
-"FLAVOPIRIDOL",
-"(+)-JQ-1",
-"CHLORIDE",
-"MS417",
-"PHA-793887",
-"ROSCOVITINE",
-"AT-7519",
-"JNJ-7706621",
-"LY-303511",
-"CYCLOSPORINE",
-"CALPEPTIN",
-"MDL-28170",
-"STO-609",
-"8-OXOOCTANOIC",
-"OCTANAL",
-"MINOCYCLINE",
-"ALVOCIDIB",
-"ALOISINE",
-"AMINOPURVALANOL-A",
-"KENPAULLONE",
-"PURVALANOL-A",
-"CGP-60474",
-"5-FLUOROURIDINE",
-"CYSTEIN",
-"FE(III)",
-"HYPOTAURINE",
-"L-CSA",
-"OXYGEN",
-"BICALUTAMIDE",
-"NECROSTATIN-1",
-"HYDROXYFASUDIL",
-"Y-27632",
-"CDK1/2 INHIBITOR",
-"IDR-E804",
-"KH-CB19",
-"R-547",
-"BML-259",
-"NSC-693868",
-"OLOMOUCINE",
-"RO-3306",
-"UBIQUINOL-1",
-"UBIQUINONE",
-"KETOCONAZOLE",
-"VORICONAZOLE",
-"OMEPRAZOLE",
-"FELBAMATE",
-"PROADIFEN",
-"ANTIMYCIN-A",
-"BIBX-1382",
-"CP-724714",
-"TYRPHOSTIN",
-"4,5-DIANILINOPHTHALIMIDE",
-"AG-494",
-"BIBU-1361",
-"TYRPHOSTIN-AG-494",
-"TYRPHOSTIN-AG-555",
-"WZ-4002",
-"PACLITAXEL",
-"STAUROSPORINE",
-"LONIDAMINE",
-"RALOXIFENE",
-"FULVESTRANT",
-"TOREMIFENE",
-"CLOMIFENE",
-"Y-134",
-"ZK-164015",
-"FORMIC ACID",
-"BALICATIB",
-"ODANACATIB",
-"RELACATIB",
-"AC1NSK3B",
-"AGN-PC-0073I8",
-"AGN-PC-015B56",
-"AGN-PC-075I8C",
-"CRA-013783/L-006235",
-"DB07563",
-"L-873724",
-"SB-357114",
-"CALCIUM IONS",
-"MECLIZINE",
-"AC1L9JZM",
-"FUCOSE",
-"GLUCOSE",
-"SIALIC ACID",
-"NADPH",
-"NICOTINAMIDE ADENINE DINUCLEOTIDE PHOSPHATE",
-"REDUCED NICOTINAMIDE ADENINE DINUCLEOTIDE",
-"5-BROMO-2'-DEOXYURIDINE",
-"MAGNESIUM",
-"N-TRIMETHYLLYSINE",
-"ZN(II)",
-"MK-2206",
-"10-DEBC",
-"PNU-74654",
-"IWR-1-ENDO",
-"FIBRATES",
-"POLYETHYLENE GLYCOL",
-"COCAINE",
-"ARSENITE",
-"RAPAMYCIN",
-"TEMSIROLIMUS",
-"KU-0063794",
-"CFSE",
-"DIAZINON",
-"O-PHOSPHOTHREONINE",
-"PSER",
-"SELENOMETHIONINE",
-"RYUVIDINE",
-"DANAZOL",
-"DIETHYLSTILBESTROL",
-"ESTRADIOL",
-"ESTRONE",
-"ESTROPIPATE",
-"CHLOROTRIANISENE",
-"DESOGESTREL",
-"DIENESTROL",
-"ESTRAMUSTINE",
-"ETHINYL ESTRADIOL",
-"ETHYNODIOL",
-"ETONOGESTREL",
-"FLUOXYMESTERONE",
-"LEVONORGESTREL",
-"MELATONIN",
-"MESTRANOL",
-"NALOXONE",
-"NORGESTIMATE",
-"OSPEMIFENE",
-"PROGESTERONE",
-"QUINESTROL",
-"TRILOSTANE",
-"AFIMOXIFENE",
-"DEHYDROEPIANDROSTERONE",
-"ESTRIOL",
-"GENISTEIN",
-"ALLYLESTRENOL",
-"ADENOSINE MONOPHOSPHATE",
-"FLAVIN ADENINE DINUCLEOTIDE",
-"APO-866",
-"FK-866",
-"GMX-1778",
-"OLIGOMYCIN-A",
-"VX-745",
-"SB-202190",
-"NSC-663284",
-"PALMITATE",
-"LINOLEIC ACID",
-"PALMITOLEIC ACID",
-"DGLA",
-"EICOSAPENTAENOIC ACID",
-"GRIFOLIC ACID",
-"OLEIC ACID",
-"STEARIC ACID",
-"FONOFOS",
-"PARATHION",
-"TERBUFOS",
-"AMMONIA",
-"YK-4-279",
-"MK-5108",
-"MLN-8054",
-"BARASERTIB",
-"TAK-715",
-"EO-1428",
-"SB-239063",
-"AT-9283",
-"TG-101348",
-"BUTHIONINE SULFOXIMINE",
-"GAMMA-GLUTAMYLCYSTEINE",
-"GLUTAMIC ACID",
-"L-CYSTEINE",
-"L-GLUTAMIC ACID",
-"REDUCED GLUTATHIONE",
-"DB02547",
-"GDP-4-KETO-6-DEOXY-D-MANNOSE",
-"GDP-FRUCTOSE",
-"GDP-FUCOSE",
-"GDP-MANNOSE",
-"GUANOSINE DIPHOSPHATE",
-"BETAMETHASONE",
-"FLUDROCORTISONE",
-"ALCLOMETASONE",
-"DEXAMETHASONE",
-"FLUOCINONIDE",
-"FLUOROMETHOLONE",
-"FLUTICASONE",
-"HALCINONIDE",
-"HYDROCORTISONE",
-"RIMEXOLONE",
-"FLUDROXYCORTIDE",
-"AGN-PC-09R4GE",
-"AGN-PC-0HGSQR",
-"CHEMBL2164850",
-"PAMOATE",
-"AGN-PC-0JJUXP",
-"AGN-PC-0JJV05",
-"AGN-PC-0JJV0A",
-"CHEMBL2425821",
-"URIDINE TRIPHOSPHATE",
-"ZAPRINAST",
-"RETINOIC ACID",
-"ACETALDEHYDE",
-"ACETATE",
-"HISTAMINE",
-"GW-501516",
-"T-0070907",
-"BISPHENOL A",
-"FENPROPIMORPH",
-"DOXYCYCLINE",
-"ESTROGEN",
-"ZYMOSTEROL",
-"ZYMOSTERONE",
-"ALPHA-ESTRADIOL",
-"TREHALOSE",
-"AC1L9I4R",
-"APICIDIN",
-"CAY-10585",
-"OLSALAZINE",
-"PP-2",
-"WH-4023",
-"IBUTILIDE",
-"QUININE",
-"POTASSIUM",
-"QUINIDINE PHENYLETHYLBARBITURATE",
-"UNDECANE",
-"5C3",
-"ASP-LEU",
-"PRO-VAL",
-"LY-364947",
-"AC1NS1R1",
-"IANTHIONINE",
-"LANTHIONINE",
-"ADOHCY",
-"GLYCEROL",
-"HYDROGEN",
-"LEUCINE",
-"NOCODAZOLE",
-"S-ADENOSYLMETHIONINE",
-"BLEOMYCIN",
-"LYSOPHOSPHATIDIC ACID",
-"CARBOXY",
-"GEMFIBROZIL",
-"CHOLESTEROL",
-"TRIACYLGLYCEROL",
-"TRITON WR-1339",
-"LOVASTATIN",
-"MEVASTATIN",
-"ABT-737",
-"UMBELLIFERONE-3-CARBOXYLIC ACID-BETA-D-GLUCOSIDE",
-"RU360",
-"CARBON DIOXIDE",
-"LACTATE",
-"ACETYL-COA",
-"RFAMIDE",
-"RIFAPENTINE",
-"OBATOCLAX",
-"TW-37",
-"WPE-III-31C",
-"METYRAPONE",
-"CAY-10618",
-"OLIGOMYCIN-C",
-"LESTAURTINIB",
-"GTP-14564",
-"JWE-035",
-"SELENOCYSTEIN",
-"2'-DEOXYGUANOSINE-5'-TRIPHOSPHATE",
-"3'-AZIDO-3'-DEOXYTHYMIDINE-5'-DIPHOSPHATE",
-"3'-DEOXY 3'-AMINO ADENOSINE-5'-DIPHOSPHATE",
-"FUDP",
-"THYMIDINE-5'-DIPHOSPHATE",
-"DILAUROYLPHOSPHATIDYLCHOLINE",
-"FENRETINIDE",
-"LEUKOTRIENE B4",
-"LEUKOTRIENE D4",
-"LEUKOTRIENE E4",
-"MRS 3578",
-"THIAMINE PYROPHOSPHATE",
-"GIVINOSTAT",
-"MOCETINOSTAT",
-"TRICHOSTATIN-A",
-"DACINOSTAT",
-"GW-5074",
-"NCH-51",
-"SCRIPTAID",
-"THM-I-94",
-"ZM-336372",
-"QUERCETIN",
-"AMP-PNP",
-"AZD1208",
-"BISINODOLYLMALE",
-"CH 80",
-"K00135",
-"LY294002HYDRO",
-"PHOSPHATIDYLSERINE",
-"PTDETN",
-"ANIRACETAM",
-"C13888",
-"DB02144",
-"DOPC",
-"PHOSPHATIDYLINOSITOL 4,5-BISPHOSPHATE",
-"PIOGLITAZONE",
-"TROGLITAZONE",
-"15D-PGJ2",
-"SCY-635",
-"AURANOFIN",
-"BENZOIC ACID",
-"DIMINAZENE",
-"BALANOL",
-"ELLAGIC ACID",
-"PENTANAL",
-"PHOSPHONOTHREONINE",
-"LOSARTAN",
-"TELMISARTAN",
-"FASUDIL",
-"PP-1",
-"AS-703026",
-"PD-0325901",
-"PD-198306",
-"PD-98059",
-"U0126",
-"FR-180204",
-"DOXORUBICIN",
-"CHITIN",
-"1,2-DISTEAROYL-SN-GLYCERO-3-PHOSPHOETHANOLAMINE",
-"CEPHALIN",
-"GAMMA-CARBOXYGLUTAMIC ACID",
-"ROSMARINIC ACID",
-"ACITRETIN",
-"ETRETINATE",
-"LATANOPROST",
-"TRAVOPROST",
-"CLOPROSTENOL",
-"PROSTAGLANDIN",
-"AC1L9I8C",
-"BMS-961",
-"CD-564",
-"FLUPROSTENOL",
-"NR2F6",
-"SR11254",
-"16,16-DIMETHYLPROSTAGLANDIN-E2",
-"DG-041",
-"L-PROLINE",
-"GPP(NH)P",
-"U-0126",
-"ADAPALENE",
-"ALITRETINOIN",
-"BIMATOPROST",
-"CARBOPROST TROMETHAMINE",
-"TAFLUPROST",
-"TAZAROTENE",
-"BMS 961",
-"DINOPROST TROMETHAMINE",
-"DODECYL MALTOSIDE",
-"DODECYL-ALPHA-D-MALTOSIDE",
-"POLY(G)",
-"CAY-10470",
-"CUCURBITACIN-I",
-"GSK-429286A",
-"FTY720-P",
-"SPHINGOSINE-1-PHOSPHATE",
-"AG-370",
-"PF-543",
-"TYRPHOSTIN-AG-1295",
-"BUTEIN",
-"OZAGREL",
-"PHENOBARBITAL",
-"STREPTOZOTOCIN",
-"CLOBENPROBIT",
-"ARSENIC",
-"EZETIMIBE",
-"HESPERETIN",
-"AVASIMIBE",
-"FATTY ACYL-COENZYME A",
-"FLUVASTATIN",
-"PITAVASTATIN",
-"LABETALOL",
-"ZD-2079",
-"TYRPHOSTIN-AG-1288",
-"TYRPHOSTIN-AG-1478",
-"WZ-3146",
-"OLEOYLETHANOLAMIDE",
-"PYRAZOLANTHRONE",
-"BI-78D3",
-"IMIQUIMOD",
-"RESIQUIMOD",
-"AGN-PC-0BRT9H",
-"NANDROLONE",
-"CMPD-1",
-"GUANOSINE TRIPHOSPHATE",
-"MIGLUSTAT",
-"GENZ-112638",
-"GLCCER",
-"1-NAPHTHOL",
-"NIFLUMIC ACID",
-"PHENOLPHTHALEIN",
-"UDP-GLUCURONIC ACID",
-"OLESOXIME",
-"DIHYDROXYALUMINIUM",
-"ABSCISIC ACID",
-"TETRAPEPTIDE",
-"PSORALEN"];
+         "10-DEBC",	"15-delta-prostaglandin-j2",	"16,16-dimethylprostaglandin-e2",	"1-benzylimidazole",	"2-AMINOPURINE",	"2-FLUOROPALMITIC-ACID",	"3-amino-benzamide",	"4,5-dianilinophthalimide",	"4-HYDROXY-2-NONENAL",	"4-iodo-6-phenylpyrimidine",	"5-iodotubercidin",	"5-nonyloxytryptamine",	"7,8-dihydro-L-biopterin",	"7-nitroindazole",	"A-443644",	"ABT-737",	"AC-55649",	"acetyl-farnesyl-cysteine",	"acyclovir",	"AFATINIB",	"AG-14361",	"AG-370",	"AG-490",	"AG-494",	"AG-879",	"AG-957",	"AICA-ribonucleotide",	"AKT-INHIBITOR-1-2",	"alaproclate",	"alclometasone",	"alda-1",	"alfuzosin",	"ALIMEMAZINE",	"alisertib",	"aloisine",	"alpha-estradiol",	"alprenolol",	"alrestatin",	"altanserin",	"alvespimycin",	"alvocidib",	"ALW-II-38-3",	"ALW-II-49-7",	"AM-281",	"AM-404",	"amcinonide",	"AMG-9810",	"aminogenistein",	"aminopurvalanol-a",	"AMIODARONE",	"amlodipine",	"AMONAFIDE",	"amoxapine",	"AMPEROZIDE",	"AMSACRINE",	"ANDROSTENEDIONE",	"androstenol",	"aniracetam",	"anpirtoline",	"antimycin-a",	"APHA-compound-8",	"apicidin",	"APO-866",	"aprepitant",	"AR-A014418",	"arachidonamide",	"ARACHIDONYL-TRIFLUORO-METHANE",	"AR-C133057XX",	"ARC-239",	"ARECAIDINE",	"ARIPIPRAZOLE",	"AS-601245",	"AS-604850",	"AS-605240",	"AS-703026",	"AT-7519",	"AT-9283",	"atomoxetine",	"atorvastatin",	"AT-SUMO-1",	"AURANOFIN",	"AVA",	"AVICIN-D",	"AVICIN-G",	"AVRAINVILLAMIDE-ANALOG-2",	"axitinib",	"AZ-10417808",	"AZ-628",	"azasetron",	"AZD-6482",	"AZD-7545",	"AZD-7762",	"AZD-8055",	"BAPTA-AM",	"barasertib",	"batimastat",	"BAX-CHANNEL-BLOCKER",	"BAY-K8644",	"BD-1047",	"BD-1063",	"belinostat",	"bemegride",	"benidipine",	"benzamil",	"benzbromarone",	"berbamine",	"betamethasone",	"BI-2536",	"BI-78D3",	"BIBR-1532",	"BIBU-1361",	"BIBX-1382",	"bicalutamide",	"BIIB021",	"bisindolylmaleimide",	"bisindolylmaleimide-ix",	"bithionol",	"BIX-01294",	"blebbistatin",	"BML-257",	"BML-259",	"BML-ST330",	"BMS-191011",	"BMS-299897",	"BMS-345541",	"BMS-536924",	"BMS-641988",	"BMS-754807",	"BMY-45778",	"BMY-7378",	"BNTX",	"bortezomib",	"bosutinib",	"brefeldin-a",	"brivanib",	"BRL-15572",	"BRL-37344",	"BRL-54443",	"bromocriptine",	"brompheniramine",	"bucladesine",	"BUFALIN",	"buphenine",	"buspirone",	"butein",	"BVT-948",	"BW-723C86",	"BW-B70C",	"BX-795",	"BX-912",	"CALCIPOTRIOL",	"calmidazolium",	"calpeptin",	"calyculin",	"camptothecin",	"candesartan",	"canertinib",	"capsaicin",	"capsazepine",	"carbidopa",	"carbinoxamine",	"carpindolol",	"carvedilol",	"CAY-10470",	"CAY-10585",	"CAY-10594",	"CAY-10618",	"CD-1530",	"CD-437",	"CDK1-5-INHIBITOR",	"cediranib",	"Celecoxib",	"CEPHAELINE",	"cercosporin",	"cerivastatin",	"cerulenin",	"CFM-1571",	"CGK-733",	"CGP-13501",	"CGP-37157",	"CGP-52432",	"CGP-53353",	"CGP-57380",	"CGP-60474",	"CGP-71683",	"CGP-7930",	"CGS-12066B",	"CGS-15943",	"chaetocin",	"CHEMBL-1222381",	"CHEMBL-374350",	"CHEMBL-399379",	"CHLORAMBUCIL",	"CHLORPROMAZINE",	"chlorprothixene",	"CHLORTALIDONE",	"CI-976",	"cilnidipine",	"cilomilast",	"cilostamide",	"cimetidine",	"cinalukast",	"cinnarizine",	"CINOBUFAGIN",	"cirazoline",	"citalopram",	"clebopride",	"clobenpropit",	"clobetasol",	"CLOFARABINE",	"clofibric-acid",	"clomethiazole",	"clomifene",	"CLONIDINE",	"clozapine",	"CMPD-1",	"COL-3",	"colforsin",	"CORTICOSTERONE",	"cortisone",	"COT-10B",	"CP466722",	"CP-724714",	"CP-94253",	"crizotinib",	"cucurbitacin-i",	"CV-1808",	"cyclazosin",	"cyclopamine",	"cyclopiazonic-acid",	"cyclosporin-a",	"CYPROHEPTADINE",	"CYT-997",	"CYTARABINE",	"CYTOCHALASIN-B",	"CYTOCHALASIN-D",	"cytosporone-b",	"D-4476",	"dacinostat",	"daidzein",	"dalcetrapib",	"DANTRON",	"danusertib",	"dasatinib",	"DAU-5884",	"daunorubicin",	"DCPIB",	"decitabine",	"deforolimus",	"DEGUELIN",	"dephostatin",	"deracoxib",	"desipramine",	"desloratadine",	"devazepide",	"dexamethasone",	"DG-041",	"diazoxide",	"dichlorobenzamil",	"DICLOFENAC",	"diclofenamide",	"dicycloverine",	"dienestrol",	"DIFLORASONE",	"DIGITOXIN",	"digoxin",	"DIHYDROERGOCRISTINE",	"dihydroergotamine",	"dilazep",	"diltiazem",	"DIPHENYLENEIODONIUM",	"dipropyl-dopamine",	"dipyridamole",	"disopyramide",	"disulfiram",	"DL-PDMP",	"DL-TBOA",	"DMAB-anabaseine",	"dobutamine",	"domperidone",	"donepezil",	"dopamine",	"dorsomorphin",	"dovitinib",	"doxepin",	"doxorubicin",	"doxycycline",	"droxinostat",	"duloxetine",	"DUP-697",	"DY-131",	"E-4031",	"ebelactone-b",	"efavirenz",	"EI-231",	"EI-247",	"eicosatetraynoic-acid",	"ELESCLOMOL",	"ELLIPTICINE",	"elvitegravir",	"EMD-386088",	"EMETINE",	"EMF-SUMO1-11",	"enalapril",	"ENMD-2076",	"ENROFLOXACIN",	"entecavir",	"ENTINOSTAT",	"enzalutamide",	"enzastaurin",	"EO-1428",	"epibatidine",	"epinephrine",	"EPITESTOSTERONE",	"eplerenone",	"EPOXYCHOLESTEROL",	"ER-27319",	"erbstatin-analog",	"ergocornine",	"eriodictyol",	"erlotinib",	"escitalopram",	"estradiol",	"estriol",	"estrone",	"ethoprop",	"ETODOLAC",	"etomoxir",	"etoposide",	"everolimus",	"EX-527",	"exemestane",	"EXO-1",	"ezetimibe",	"fasudil",	"fatostatin",	"FCCP",	"felbamate",	"felodipine",	"fenobam",	"fenoldopam",	"fenoterol",	"fenretinide",	"fexaramine",	"fexofenadine",	"FGIN-1-27",	"finasteride",	"fipronil",	"FIT",	"FK-866",	"FK-888",	"flucloxacillin",	"fludrocortisone",	"fludroxycortide",	"flumazenil",	"flunarizine",	"FLUNISOLIDE",	"fluocinonide",	"fluorometholone",	"fluoxetine",	"FLUPENTIXOL",	"fluphenazine",	"flupirtine",	"fluspirilene",	"flutamide",	"fluticasone",	"fluvastatin",	"formoterol",	"fostamatinib",	"FPL-64176",	"FR-180204",	"FTI-276",	"fulvestrant",	"fusaric-acid",	"Gabexate",	"GANT-58",	"gatifloxacin",	"gavestinel",	"GBR-13069",	"GDC-0879",	"GDC-0941",	"gedunin",	"gefitinib",	"geldanamycin",	"GEMCITABINE",	"genistein",	"givinostat",	"glibenclamide",	"gliquidone",	"GMX-1778",	"GOSSYPOL",	"GR-127935",	"GR-159897",	"GR-55562",	"griseofulvin",	"GS-39783",	"GSK-0660",	"GSK-1059615",	"GSK-1070916",	"GSK-1904529A",	"GSK-2334470",	"GSK-429286A",	"GSK-461364",	"GTP-14564",	"GW-0742",	"GW-1929",	"GW-3965",	"GW-405833",	"GW-441756",	"GW-501516",	"GW-5074",	"GW-6471",	"GW-843682X",	"GW-9508",	"GYKI-52466",	"H-7",	"H-89",	"HA-1004",	"HA-14-1",	"halcinonide",	"HC-TOXIN",	"HDAC3-SELECTIVE",	"HEAT",	"HELIOMYCIN",	"hemado",	"HG-5-113-01",	"HG-6-64-01",	"HLI-373",	"HNHA",	"homochlorcyclizine",	"HOMOHARRINGTONINE",	"HSP90-INHIBITOR",	"hydrocortisone",	"hydroxycholesterol",	"hydroxyfasudil",	"HYPERICIN",	"ibudilast",	"ICI-199441",	"idarubicin",	"IKK-16",	"IKK-2-INHIBITOR-V",	"ilomastat",	"iloprost",	"imiquimod",	"immepip",	"importazole",	"INCA-6",	"indatraline",	"indinavir",	"indirubin",	"INDOLOPHENANTHRIDINE",	"ingenol",	"iodophenpropit",	"IPRATROPIUM",	"ipsapirone",	"irinotecan",	"IRL-2500",	"irsogladine",	"isocarboxazid",	"ISOFLUPREDONE",	"isoliquiritigenin",	"ISOX",	"isoxsuprine",	"ispinesib",	"itraconazole",	"ivachtin",	"IVERMECTIN",	"IWR-1-ENDO",	"JAK3-INHIBITOR-I",	"JAK3-INHIBITOR-II",	"JAK3-INHIBITOR-VI",	"JLK-6",	"JNJ-26854165",	"JNJ-7706621",	"JTE-013",	"JTE-907",	"JW-7-24-1",	"JWE-035",	"JWH-015",	"JX-401",	"KB-R7943",	"kenpaullone",	"ketanserin",	"ketoconazole",	"KF-38789",	"KI-8751",	"KIN001-127",	"KIN001-220",	"KIN001-242",	"KIN001-244",	"KN-62",	"KN-93",	"KO-143",	"KU-0060648",	"KU-0063794",	"KU-55933",	"KU-C104488",	"KU-C104493",	"KUC111774N",	"L-161982",	"L-168049",	"L-368899",	"L-690330",	"L-690488",	"L-692585",	"L-733060",	"L-741626",	"L-750667",	"L-755507",	"L-803087",	"labetalol",	"lacidipine",	"lamivudine",	"lamotrigine",	"lapatinib",	"lavendustin-a",	"lavendustin-c",	"LDN-193189",	"LE-135",	"lenalidomide",	"lestaurtinib",	"letrozole",	"LEVONORGESTREL",	"LFM-A13",	"lidocaine",	"linifanib",	"linopirdine",	"linsitinib",	"lonidamine",	"loperamide",	"lopinavir",	"loreclezole",	"losartan",	"lovastatin",	"loxapine",	"LY-165163",	"LY-2183240",	"LY-288513",	"LY-294002",	"LY-303511",	"LY-364947",	"LY-456236",	"LYLAMINE",	"M-3M3FBS",	"malonoben",	"manumycin-a",	"maprotiline",	"maraviroc",	"masitinib",	"MAZ-51",	"MDL-28170",	"MDL-29951",	"MDL-73005EF",	"meclofenamic-acid",	"medroxyprogesterone",	"mefenamic-acid",	"MEK1-2-INHIBITOR",	"melperone",	"menadione",	"MEPACRINE",	"mepyramine",	"MERCK60",	"MERCK-KETONE",	"mestinon",	"metergoline",	"methotrexate",	"METHOXSALEN",	"METHYLENE-BLUE",	"methyllidocaine",	"methylprednisolone",	"methysergide",	"metyrapone",	"mevastatin",	"mexiletine",	"MG-132",	"mianserin",	"mibefradil",	"midostaurin",	"mifepristone",	"milrinone",	"mirtazapine",	"mitoxantrone",	"MK-1775",	"MK-2206",	"MK-5108",	"ML-7",	"MLN-2238",	"MLN-4924",	"MLN-8054",	"mocetinostat",	"modafinil",	"MOLSIDOMINE",	"mometasone",	"mosapride",	"motesanib",	"MRS-1220",	"MRS-1845",	"MST-312",	"MT-21",	"MW-STK33-1A",	"MW-STK33-1C",	"MY-5445",	"MYCOPHENOLATE-MOFETIL",	"MYCOPHENOLIC-ACID",	"myriocin",	"N6-cyclopentyladenosine",	"nabumetone",	"nadolol",	"nafadotride",	"NAFTIDROFURYL",	"naftopidil",	"naltrexone",	"NAPROXOL",	"NARCICLASINE",	"navitoclax",	"NBQX",	"NCH-51",	"NCS-382",	"NECA",	"necrostatin-1",	"nefazodone",	"nelfinavir",	"NEMONAPRIDE",	"neratinib",	"NF-449",	"nialamide",	"nicardipine",	"nicergoline",	"NICLOSAMIDE",	"nifedipine",	"niguldipine",	"nilotinib",	"nilutamide",	"nimesulide",	"nisoldipine",	"nitrendipine",	"NIZATIDINE",	"NM-PP1",	"NNC-05-2090",	"NNC-55-0396",	"nobiletin",	"NONOXYNOL-9",	"norepinephrine",	"NS-1619",	"NSC-23766",	"NSC-3852",	"NSC-632839",	"NSC-663284",	"NSC-693868",	"NTNCB",	"NU-1025",	"NU-7026",	"NU-7441",	"nutlin-3",	"NVP-AUY922",	"NVP-BEZ235",	"NVP-TAE684",	"O-2050",	"obatoclax",	"ODQ",	"olaparib",	"oleoylethanolamide",	"oligomycin-a",	"oligomycin-c",	"OLOMOUCINE",	"OLOPATADINE",	"OM-137",	"OMDM-2",	"OMEPRAZOLE",	"ON-01910",	"ondansetron",	"Orantinib",	"orciprenaline",	"orlistat",	"orteronel",	"OSI-027",	"ouabain",	"oxalomalic-acid",	"OXETANE",	"oxindole-I",	"oxymetazoline",	"ozagrel",	"PAC-1",	"palbociclib",	"panobinostat",	"pantoprazole",	"PAPAVERINE",	"pargyline",	"paroxetine",	"paxilline",	"pazopanib",	"PCA-4248",	"PD-0325901",	"PD-102807",	"PD-158780",	"PD-160170",	"PD-166793",	"PD-173074",	"PD-184352",	"PD-198306",	"PD-98059",	"pemetrexed",	"pepstatin",	"pergolide",	"perhexiline",	"perindopril",	"PERPHENAZINE",	"PF-04217903",	"PF-3845",	"PF-543",	"PF-562271",	"PF-750",	"PHA-665752",	"PHA-793887",	"PHCCC",	"phenamil",	"phenanthridone",	"phenazone",	"phenelzine",	"phenformin",	"phenothiazine",	"Phenoxybenzamine",	"phloretin",	"PHORBOL-12-MYRISTATE-13-ACETATE",	"PHOSPHODIESTERASE-V-INHIBITOR-II",	"physostigmine",	"PI-103",	"PI-828",	"PICROTOXIN",	"pifithrin-alpha",	"pifithrin-mu",	"PIK-75",	"PIK-90",	"PIMOZIDE",	"pindolol",	"pirarubicin",	"pirenperone",	"PIRETANIDE",	"piribedil",	"pitavastatin",	"PJ-34",	"PK-11195",	"PLX-4720",	"PNU-120596",	"PNU-120596  ",	"PNU-74654",	"PP-1",	"PP-110",	"PP-2",	"PPT",	"PQ-401",	"pramipexole",	"pravastatin",	"PRAZOSIN",	"PRE-084",	"PREDNICARBATE",	"prednisolone",	"proadifen",	"procainamide",	"procaterol",	"prochlorperazine",	"PROFENAMINE",	"progesterone",	"PROMETHAZINE",	"propafenone",	"PROPYLPYRAZOLE",	"proscillaridin",	"prostratin",	"prothionamide",	"PSB-069",	"PSB-36",	"PU-H71",	"PUROMYCIN",	"purvalanol-a",	"PX-12",	"pyrazolanthrone",	"pyrimethamine",	"pyroxamide",	"pyrrolidine-dithiocarbamate",	"PYRVINIUM-PAMOATE",	"QL-X-138",	"quercetagetin",	"QUETIAPINE",	"QUIFLAPON",	"QUINOCLAMINE",	"quipazine",	"quizartinib",	"r(-)-propylnorapomorphine",	"R-59022",	"R-96544",	"rabeprazole",	"racecadotril",	"raclopride",	"radicicol",	"raloxifene",	"raltitrexed",	"ranitidine",	"razoxane",	"remacemide",	"RESERPINE",	"resveratrol",	"RETINOL",	"reversine",	"RG-108",	"RG-13022",	"RHODOMYRTOXIN-B",	"ribavirin",	"riluzole",	"rimcazole",	"rimexolone",	"Ritanserin",	"rivaroxaban",	"rizatriptan",	"Ro-04-6790",	"RO-08-2750",	"RO-19-4605",	"RO-28-1675",	"RO-3306",	"RO-90-7501",	"rolipram",	"ropinirole",	"roscovitine",	"rosiglitazone",	"rosuvastatin",	"rottlerin",	"RS-102895",	"RS-17053",	"RS-23597-190",	"RS-39604",	"RS-504393",	"RS-56812",	"RU-24969",	"rucaparib",	"ruxolitinib",	"ryuvidine",	"SA-792987",	"salermide",	"salmeterol",	"salubrinal",	"saracatinib",	"SB-200646",	"SB-202190",	"SB-203580",	"SB-205384",	"SB-205607",	"SB-206553",	"SB-216641",	"SB-216763",	"SB-218078",	"SB-218795",	"SB-225002",	"SB-239063",	"SB-258585",	"SB-269970",	"SB-366791",	"SB-408124",	"SB-415286",	"SB-431542",	"SB-525334",	"SB-590885",	"SC-19220",	"SC-560",	"SC-68376",	"SCH-23390",	"SCH-58261",	"SCH-79797",	"SCOULERINE",	"scriptaid",	"SDM25N",	"SDZ-NKT-343",	"securinine",	"SELAMECTIN",	"selumetinib",	"semaxanib",	"serdemetan",	"sertraline",	"SIB-1893",	"sildenafil",	"simvastatin",	"sinensetin",	"sirolimus",	"sitagliptin",	"SJ-172550",	"SKF-77434",	"SKF-81297",	"SKF-86002",	"SKF-89976A",	"SKF-96365",	"SN-38",	"SNS-314",	"somatostatin",	"sorafenib",	"spiperone",	"spiramide",	"SQ-22536",	"SR-27897",	"SR-57227A",	"SR-59230A",	"SRT-1720",	"SSR-69071",	"ST-056792",	"staurosporine",	"STO-609",	"SU-11274",	"SU-11652",	"SU-1498",	"SU-4312",	"sulpiride",	"Sunitinib",	"SYNEPHRINE",	"T-0070907",	"T-0156",	"T-0901317",	"T-98475",	"tacedinaline",	"tacrolimus",	"tadalafil",	"TAK-715",	"talniflumate",	"tamibarotene",	"tamoxifen",	"tanespimycin",	"TAS-301",	"taxifolin",	"TCS-359",	"tegaserod",	"telmisartan",	"temsirolimus",	"teniposide",	"tenofovir",	"tenovins",	"TER-14687",	"TERFENADINE",	"testosterone",	"tetrindole",	"TG-101348",	"TGX-115",	"TGX-221",	"thalidomide",	"thapsigargin",	"THIORIDAZINE",	"thiorphan",	"thiostrepton",	"THIOTHIXENE",	"THM-I-94",	"THZ-2-98-01",	"tiabendazole",	"tianeptine",	"tigecycline",	"Tipifarnib",	"tipifarnib-P2",	"tivozanib",	"Tizanidine",	"topotecan",	"toremifene",	"torin-1",	"torin-2",	"tosedostat",	"TOSYL-PHENYLALANYL-CHLOROMETHYL-KETONE",	"tozasertib",	"TPCA-1",	"tracazolate",	"TRAMADOL",	"TRAP-101",	"trapidil",	"trazodone",	"TREMULACIN",	"trequinsin",	"triacsin-c",	"TRIAMCINOLONE",	"trichostatin-a",	"triciribine",	"triclosan",	"triflupromazine",	"TRIMIDOX",	"triptolide",	"troglitazone",	"tropicamide",	"TTNPB",	"tubacin",	"TUBASTATIN-A",	"TW-37",	"TWS-119",	"tyrphostin",	"tyrphostin-1",	"tyrphostin-A9",	"tyrphostin-AG-126",	"tyrphostin-AG-1288",	"tyrphostin-AG-1295",	"tyrphostin-AG-1478",	"tyrphostin-AG-18",	"tyrphostin-AG-494",	"tyrphostin-AG-527",	"tyrphostin-AG-555",	"tyrphostin-AG-556",	"tyrphostin-AG-82",	"tyrphostin-AG-835",	"U0126",	"U-0126",	"U-18666A",	"U-74389F",	"UB-165",	"ubenimex",	"UCL-2077",	"UK-356618",	"UNC-0321",	"valdecoxib",	"VAMA-37",	"vanoxerine",	"vardenafil",	"veliparib",	"vemurafenib",	"VER-155008",	"verapamil",	"verrucarin-a",	"vesamicol",	"vicriviroc",	"VINPOCETINE",	"VORICONAZOLE",	"vorinostat",	"VU-0365114-2",	"VX-222",	"VX-702",	"VX-745",	"W-13",	"W-9",	"WAY-170523",	"WH-4023",	"wiskostatin",	"wortmannin",	"WR-216174",	"WYE-125132",	"WYE-354",	"WZ-3146",	"WZ-4002",	"WZ-4-145",	"WZ-7043",	"xaliproden",	"XAV-939",	"XE-991",	"XL-147",	"XMD-885",	"XMD-892",	"Y-134",	"Y-27632",	"YC-1",	"YK-4279",	"YM-298198",	"YM-90709",	"zaldaride",	"zamifenacin",	"zardaverine",	"ZD-2079",	"ZD-7114",	"zebularine",	"zibotentan",	"zileuton",	"ziprasidone",	"ZK-164015",	"ZK-93423",	"ZK-93426",	"ZM-241385",	"ZM-306416",	"ZM-336372",	"ZM-447439",	"ZOLANTIDINE",	"zosuquidar",	"ZSTK-474"];
                     
                                          var availableGenes = [
-           "BRAF","CRK","NLK","RAF1","SRC","PHB","PPARG","SNAI3","UGCG","CSNK1D","EIF4EBP1",
-"ESR1","HNF4A","LPL","SOAT1","CCND1","GADD45A","PSMB8","TFAP4","GADD45B","S1PR3","ASF1B","ACD",
-"ADORA2B","AGPAT1","AKT1","ALG5","ARF6","ASGR2","ASMTL","ASNA1","AURKAIP1","AURKB","BATF3",
-"BCL10","BRD3","BRD4","CAMLG","CASD1","CASP2","CASP3","CD40","CDKN1A","CDKN2C","CDO1","CFL1",
-"CFLAR","CHN1","CHRAC1","CLK3","COX7B","CSF3","CSK","CTBP1","CTCF","CTCFL","CTSK","CXADR",
-"CXCL1","DDIT3","DECR1","DIDO1","DLX3","EBF1","ECH1","EGR1","EHF","ELF4","ELK3","ERG","ETFA",
-"ETS2","ETV1","EXT1","FADD","FBXO5","FBXW11","FFAR4","FGFRL1","FGG","FLI1","FOSL1","FOXA3",
-"FOXP3","GABPB1","GABPB2","GATA3","GCLM","GMDS","GMEB1","GNB1L","GNG5","GPR139","GPR146",
-"GPR35","GPRC5B","GRK6","GRPR","GTF2B","HEY1","HOXA5","HOXA6","HOXA9","HOXB13","HOXB7",
-"HOXC4","HOXC9","HSD17B7","HSF1","HSPB8","ICAM3","ID2","IFNB1","IFNG","IGF2","IKBKG","IL13",
-"IL2RB","IRF2","IRF5","KCNK1","KLF3","KLF6","LANCL1","LCMT1","LIG1","LPAR1","LTBR","LYN",
-"MAP2K6","MBNL1","MBNL2","MCUR1","MEIS2","MNAT1","MPC2","MRGPRF","MSH2","MTERF3","MXD3","MYB",
-"MYCBP","NDRG1","NDUFA13","NDUFB5","NEK6","NFE2L2","NFIB","NME1","NR5A2","NSFL1C","OTX2",
-"P2RY6","PASD1","PBX4","PDHA1","PHF13","PIM1","PISD","PITPNA","POU5F1","PPP1CA","PPP2R3C",
-"PRDM1","PRDX5","PRKACA","PRKCE","PRKCZ","PROCR","PRPF4","PTGFR","PYCR1","RAB31","RARG","RBM6",
-"RELB","RHOA","RNF145","RORC","RPF1","RYBP","SALL4","SET","SF1","SLC37A4","SMAD3","SNRNP70",
-"SNRPA","SPDEF","SPIC","SQSTM1","STAT4","TANK","TAP1","TCF7L2","TEAD2","TFAP2A","TIRAP","TLR8",
-"TNFAIP1","TNFRSF10A","TNFRSF10B","TNFRSF1A","TOR1A","TRAF1","TRAF2","TRAP1","TRIB1","TUBB6",
-"TWIST2","TXNIP","UBE2E3","UGT1A9","VDAC1","VGLL4","VN1R5","VPS28","XPR1","YARS","ZBTB18",
-"ZFP36L1","ZNF300","ZNF524","ZNF653","ZRANB2"];
+           "AKT/PKB",	"PPARg agonist",	"EP receptor (pan) agonist",	"TXB2",	"EIF2AK2",	"PPARA",	"PARP",	"EGFR",	"Glutathione S-transferase alpha",	"MIF",	"Adenosine kinase",	"5-HT 1B agonist",	"GTP cyclohydrolase I",	"NOS",	"Akt1",	"BCL-2",	"RARB2 agonist",	"PPARg",	"Viral DNA polymerase",	"EGFR",	"PARP-1",	"PDGFR",	"EGFR",	"EGFR",	"HER2",	"Tyrosine kinase (broad)",	"AMPK agonist",	"Akt (pan)",	"5-HT (pan)",	"GR agonist",	"ALDH2",	"a1 adrenergic receptor",	"Histamine receptor 1",	"Aurora kinase (pan)",	"CDK1, 2, 5/GSK-3a, b",	"5α-reductase",	"5-HT 1A",	"Aldose reductase",	"5-HT 2A",	"HSP90",	"CDK1, 2, 4, 6",	"EPHA3",	"EPHA7",	"CB1 agonist",	"COX (pan)",	"Phospholipase A2",	"TRPV1 receptor",	"Lck",	"CDK1, 2, 5/GSK-3a, b",	"Cytochrome P450",	"Ca channel",	"TOP2A/B",	"GLYT2a",	"5-HT 2A",	"TOP2A",	"Hydroxysteroid dehydrogenase 17-beta",	"GABA-A receptor agonist",	"AMPA receptor agonist",	"5-HT 1B agonist",	"Cytochrome c reductase",	"HDAC",	"HDAC3",	"NMPRTase",	"NK1",	"GSK3",	"CB 1,2 agonist",	"Phospholipase A2",	"iNOS",	"α2B-adrenergic receptor",	"Cholinergic receptor, muscarinic agonist",	"Dopamine receptor D2; 5-HT (pan)",	"JNK (pan)",	"PI3Kg",	"PI3Kg",	"MEK1/2",	"CDK1, 2, 4, 6, 9",	"JAK2, 3 / Aurora kinase A,B",	"SERT, NET, DAT",	"HMG-CoA reductase",	"SUMO1",	"Thioredoxin reductase",	"Iron",	"AMPK activator",	"AMPK activator",	"Nucleophosmin",	"VEGFR (pan)",	"Caspase-2",	"Raf (pan)",	"5-HT 3",	"PI3Kb",	"PDHK2",	"Chk1, 2",	"mTORC1",	"Ca chelator",	"Aurora kinase B",	"MMP16",	"BAX",	"Ca channel agonist",	"Sigma receptor",	"Sigma receptor",	"HDAC",	"GABA-A receptor",	"Ca channel ",	"Na channel",	"xanthine oxidase, CYP2C9 ",	"Ca channel",	"GR agonist",	"PLK1",	"MAPK8",	"telomerase",	"EGFR",	"EGFR",	"GnRH agonist",	"HSP90",	"PKC (pan)",	"PKC (pan)",	"soluble adenylyl cyclase",	"G9a",	"Myosin-II",	"AKT1",	"CDK5, 2",	"Phospholipase C inhibitor",	"BK Ca channel agonist",	"γ-secretase",	"IKBKB",	"IGF-1R",	"androgen receptor",	"IGF-1R",	"IP1 partial agonist",	"a1D adrenergic receptor",	"Sigma receptor",	"Proteasome",	"Src kinases",	"GBF1",	"Tyrosine Kinase (broad)",	"5-HT 1D",	"b3 adrenergic receptor agonist",	"5-HT 1E, 1F agonist",	"Dopamine D2 agonist",	"H1 receptor",	"PDE",	"Cytochrome P450",	"b2 adrenergic receptor agonist",	"5-HT 1A",	"EGFR, NF-kB, STAT3",	"PTP (pan)",	"5-HT 2B agonist",	"Arachidonate 5-lipoxygenase",	"PDK1",	"PDK1",	"Vitamin D receptor",	"calmodulin",	"Calpain",	"PP1, PP2A",	"topoisomerase I",	"Angiotensin II receptor",	"ErbB (pan)",	"Ca channel",	"TRPV1",	"DOPA decarboxylase",	"H1 receptor",	"b adrenergic receptor, 5-HT 1A, 1B",	"b adrenergic receptor (pan)",	"NFKB",	"HIF-1a",	"Phospholipase D2",	"NMPRTase",	" RARγ agonist",	"RARγ agonist",	"CDK1;5",	"VEGFR (pan)",	"COX-2",	"EPAS1",	"ROS agonist",	"HMG-CoA reductase",	"Ketoacyl-Acyl Carrier Protein Synthase ",	"Soluble guanylate cyclase agonist",	"ATM Kinase",	"GABA-B receptor agonist",	"Ca channel",	"GABA-B receptor",	"PKCb2",	"MNK1",	"CDK1, 2",	"NPY5",	"GABA B modulator",	"5-HT 1B agonist",	"A1, A2, A3 adenosine receptor",	"SUV39H1",	"K channel",	"Cytochrome P450",	"ACLY",	"Glutathione S-transferase pi",	"Dopamine receptor D2; 5-HT (pan);Histamine receptor 1;Alpha adrenergic receptor 1",	"5-HT 2",	"Na channel",	"ACAT1",	"Ca channel",	"PDE4",	"PDE3",	"H2 receptor",	"CysLT1",	"Ca channel",	"Cytochrome P450",	"α1A adrenergic receptor agonist",	"SERT",	"Dopamine D1, D2",	"H3 receptor",	"GR agonist",	"DNA polymerase alpha",	"PPARa agonist",	"GABA A agonist",	"ER (pan)",	"Alpha 2 adrenergic receptor",	"5-HT 2A, 2C",	"MK2",	"MMP2",	"adenylyl cyclase agonist",	"Nuclear receptor subfamily 3",	"GR agonist",	"MAP3K8",	"ATM Kinase",	"EGFR",	"5-HT 1B agonist",	"ALK, ROS1",	"STAT3, JAK2",	"Adenosine A2 receptor agonist",	"a1B adrenergic receptor",	"Smo",	"Ca2+-ATPase",	"Calcineurin",	"5-HT (pan);Histamine receptor 1;Cholinergic receptor; muscarinic",	"Tubulin (pan)",	"DNA polymerase beta",	"Actin",	"Actin",	"Nur-77 agonist",	"CK1",	"HDAC",	"Tyrosine Kinase (broad)",	"CETP",	"RARa",	"Aurora kinase (pan)",	"Tyrosine Kinase (broad)",	"Cholinergic receptor, muscarinic",	"topoisomerase II",	"VSAC",	"DNMT",	"mTORC1/2",	"AKT1",	"PTP1B, SH-PTP1",	"COX-2",	"NET",	"H1 receptor",	"CCKA",	"GR agonist",	"EP3",	"K channel activator",	"Ca channel",	"Prostaglandin E synthase 2",	"CA (pan)",	"AChR",	"ER agonist",	"Nuclear receptor subfamily 3",	"Ca2+-ATPase",	"Ca2+-ATPase",	"Alpha 1 adrenergic  receptor agonist",	"5-HT 1D agonist",	"ENT (pan)",	"Ca channel",	"NADPH oxidase inhibitor",	"Dopamine D1, D2 agonist",	"Phosphodiesterase inhibitor",	"Na channel",	"Acetaldehyde dehydrogenase",	"DDIT3",	"EAAT (pan)",	"AChR a7 agonist ",	"b1 adrenergic receptor agonist",	"Dopamine D2,D3",	"Acetylcholinesterase",	"Adrenergic receptor (pan) agonist",	"AMPK, ALK2, 3, 6",	"FGFR",	"SERT, NET, DAT, H1 receptor",	"topoisomerase II",	"30s ribosome",	"HDAC6, 8",	"SERT",	"COX-2",	"ERR b, g agonist",	"K channel",	"Lipase",	"NNRTI",	"casein kinase II",	"Tyrosine Kinase (broad)",	"COX-1",	"HSP70",	"TP53",	"Integrase",	"5-HT 6 agonist",	"SNRPA",	"SUMO1",	"ACE",	"Aurora kinase A",	"topoisomerase II",	"Anti HBV RT",	"HDAC1",	"Androgen receptor",	"PKCa/b/g/e",	"MAPK",	"α7 nicotinic receptor agonist",	"Adrenergic receptor (pan) agonist",	"AKR1C2",	"MR",	"Nuclear receptor subfamily 1",	"Syk",	"EGFR",	"Dopamine receptor (pan)",	"TRPV1",	"EGFR",	"SERT, NET, DAT",	"ER agonist",	"ER agonist",	"ER (pan) agonist",	"Acetylcholinesterase",	"Prostaglandin E synthase 2",	"CPT-1",	"topoisomerase II",	"mTORC1",	"SIRT1",	"Aromatase",	"ARF1",	"NPC1L1",	"ROCK-1/2",	"SREBF1",	"Catechol-O-methyltransferase",	"Cytochrome P450",	"Ca channel",	"mGluR 5",	"Dopamine D1 agonist",	"b2 adrenergic receptor agonist",	"RAR (pan)",	"FXR agonist",	"H1 receptor",	"GABA-A receptor agonist",	"5-alpha reductase",	"GABA-A receptor",	"Opioid receptor mu",	"NMPRTase",	"NK1",	"Peptidoglycan",	"GR agonist",	"GR agonist",	"GABA-A receptor",	"Calcium",	"Nuclear receptor subfamily 3",	"GR agonist",	"GR agonist",	"SERT",	"Dopamine receptor D1; 5-HT (pan);Alpha adrenergic receptor 1",	"Dopamine D1, D2",	"NMDA receptor",	"Ca channel",	"androgen receptor",	"GR agonist",	"HMG-CoA reductase",	"b2 adrenergic receptor agonist",	"Syk",	"Ca channel",	"ERK",	"Ftase",	"ER-a",	"dopamine β-hydroxylase",	"Kallikrein",	"GLI1",	"bacterial DNA gyrase",	"NMDA",	"Dopamine transporter",	"B-Raf",	"PI3Ka/d",	"HSP90",	"EGFR",	"HSP90",	"Deoxycytidine kinase",	"ER-b",	"HDAC",	"K channel",	"K channel",	"NAMPT",	"BCL-2",	"5-HT 1B, 1D",	"TACR2",	"5-HT 1B, 1D",	"Fungal tubulin",	"GABA-B agonist",	"PPARd",	"PI3K (pan)",	"Aurora kinase B/C",	"IGF-1R",	"PDK1",	"ROCK-1/2",	"PLK1",	"Tyrosine Kinase (broad)",	"PPARd",	"PPARg agonist",	"LXR agonist",	"CB2 agonist",	"TrkA",	"PPARg",	"c-Raf",	"PPARα",	"PLK3",	"FFAR1",	"AMPA receptor",	"PKCa",	"PKA",	"PKA",	"BCL-2",	"GR agonist",	"HDAC1",	"HDAC3",	"a1 adrenergic receptor",	"ATP synthetase",	"A3 Adenosine agonist",	"Tyrosine Kinase (broad)",	"B-Raf",	"HDM2",	"HDAC",	"H1 receptor",	"RPL3",	"HSP90",	"GR agonist",	"SERM",	"ROCK-1",	"KDR",	"PDE4",	"Kappa receptor agonist",	"topoisomerase II",	"IKK",	"IKBKB",	"MMP (broad)",	"PGI2",	"IL6",	"H3 receptor agonist",	"importin-B",	"CXCL2",	"DAT, NET, SERT",	"HIV protease",	"Pik1, Pin1, CDC25B",	"Dopamine receptor D1",	"PKCg",	"H3 receptor",	"Cholinergic receptor; muscarinic",	"5-HT 1A agonist",	"topoisomerase I",	"endothelin receptor type B",	"PDE4",	"MAO B",	"Glucocorticoid receptor agonist",	"GABA A agonist",	"p300/CBP",	"renin endopeptidase",	"KSP",	"14-alpha-demethylase",	"Caspase-3",	"Alpha 7 nicotinic receptor ",	"Wnt (pan)",	"JAK3",	"JAK3",	"JAK3",	"Gamma-secretase",	"HDM2",	"CDK (pan)",	"S1P2",	"CB2 agonist",	"Lck",	"Tyrosine Kinase (broad)",	"CB2 receptor agonist",	"MAPK",	"NCX1",	"CDK1, 2/GSK-3b",	"5-HT 2A",	"Cytochrome P450",	"P-selectin",	"VEGFR2",	"ITK",	"Aurora kinase A",	"Ribosomal protein S3 kinase A3",	"PDK1",	"CaMKII",	"CaMKII",	"BCRP",	"DNA-PK / PI3K",	"mTORC1/2",	"ATM Kinase",	"Tyrosyl-DNA Phosphodiesterase 1",	"Alpha trans-inducing protein",	"CDK2",	"EP4",	"hGR",	"oxytocin receptor",	"IMPase",	"IMPase",	"GHRHR",	"NK1",	"Dopamine D2",	"Dopamine D4",	"b3 adrenergic receptor agonist",	"Somatostatin Receptor 4 agonist",	"b1 adrenergic receptor",	"Ca channel",	"HIV reverse transcriptase",	"Na channel, K channel",	"EGFR",	"EGFR",	"EGFR",	"ALK2, 3",	"RARa, b",	"IKZF1, 3",	"Tyrosine Kinase (broad)",	"Aromatase",	"PGR",	"BTK",	"Na channel",	"VEGFR, PDGFRb",	"K channel",	"IGF-1R",	"AKT1",	"Mu receptor",	"HIV protease",	"GABA-A receptor agonist",	"Angiotensin II receptor",	"HMG-CoA reductase",	"5-HT 2A",	"5-HT 1A agonist",	"FAAH",	"CCK2",	"PI3Kg",	"BRD2, 3, 4",	"TGFβR-I ",	"mGluR-1a",	"Cannabinoid Receptor 1",	"PLC agonist",	"Tyrosine kinase (broad)",	"Farnesyl transferase",	"NET, H1 receptor, 5-HT 2",	"CCR5",	"c-Kit",	"VEGFR3",	"Calpain",	"fructose-1,6-bisphosphatase 1",	"5-HT 1A agonist",	"COX (pan)",	"PR, AR, GR agonist",	"COX (pan)",	"MEK1/2",	"5-HT 2A, Dopamine D2",	"K-dependent coagulation factor agonist",	"Phospholipase A2",	"H1 receptor agonist",	"HDAC1/2",	"HDAC",	"Acetylcholinesterase",	"5-HT 1D agonist",	"DHFR",	"Cytochrome P450",	"Monoamine oxidase",	"Na channel",	"GR agonist",	"5-HT 2, 5-HT 2A",	"cytochrome P450",	"HMG-CoA reductase",	"Na channel",	"Proteasome",	"5-HT 2A",	"Ca channel",	"Protein kinase (multi)",	"PR",	"PDE3",	"5-HT 2",	"topoisomerase II",	"Wee 1 Kinase",	"AKT 1, 2, 3",	"Aurora kinase A",	"MLCK",	"Proteasome",	"NAE1",	"Aurora kinase A",	"HDAC1",	"DAT",	"Lanosterol synthase",	"GR agonist",	"5-HT 4 agonist",	"PPARD agonist",	"Adenosine a3 receptor",	"Ca channel",	"Telomerase",	"Adenine Nucleotide Translocator",	"STK33",	"STK33",	"PDE5",	"IMPDH1/2",	"IMPDH1/2",	"Serine palmitoyltransferase",	"Adenosine a1 receptor",	"COX-2",	"b1 adrenergic receptor",	"Dopamine D3 receptor",	"Nuclear receptor subfamily 1",	"α1A-adrenergic receptor",	"Opioid receptor (pan)",	"Prostaglandin E synthase 2",	"EEF1A1",	"BCL-2",	"AMPA receptor",	"HDAC",	"GHB receptor",	"Adenosine A3, A1, A2A receptor agonist",	"RIPK1",	"5-HT 2A",	"HIV protease",	"Dopamine receptor D (pan)",	"HER2",	"P2X1",	"MAO",	"Ca channel",	"a1A adrenergic receptor",	"Wnt",	"Ca channel",	"Ca channel",	"Tyrosine kinase (broad)",	"androgen receptor",	"COX-2",	"Ca channel",	"Ca channel",	"Histamine receptor 2",	"Kinases (broad)",	"BGT-1",	"Ca channel",	"flavanoid",	"TBX1",	"adrenergic receptor agonist (pan)",	"K channel",	"Rac1",	"HDAC",	"Ubiquitin specific peptidase",	"Cdc25 A, B2, C",	"CDK (pan)",	"NPY5",	"PARP-1",	"DNA-PK",	"DNA-PK",	"MDM2",	"HSP90",	"PI3K (pan)/mTOR",	"ALK (pan)",	"CB1 receptor",	"BCL-2",	"Guanylyl cyclase",	"PARP-1",	"PPARa agonist",	"ATP synthase",	"ATP synthetase",	"CDK (pan)",	"Histamine receptor 1",	"Aurora kinase B",	"AEA uptake receptor",	"Cytochrome P450 (pan)",	"PLK1",	"5-HT 3",	"VEGFR2",	"b2 adrenergic receptor agonist",	"pancreatic lipase",	"CYP17A1",	"mTORC1/2",	"Na/K ATPase",	"aconitase",	"Exocyst complex",	"VEGFR2",	"a1 adrenergic receptor agonist",	"TXA2",	"CASP3",	"CDK4, 6",	"HDAC",	"Proton pump",	"PDE (pan)",	"MAO-B",	"SERT",	"K channel",	"Tyrosine Kinase (broad)",	"PAF",	"MEK (pan)",	"M4 receptor",	"ErbB (pan)",	"NPY1-R",	"MMP2",	"FGFR1",	"MEK1/2",	"MEK1/2",	"MEK1/2",	"TS, DHFR, GARFT",	"Pepsin, cathepsin D, cathepsin E",	"Dopamine D2 agonist",	"CPT1/2",	"ACE",	"Dopamine receptor D (pan)",	"c-Met",	"FAAH",	"SK1/2",	"FAK",	"FAAH",	"c-Met",	"CDK (pan)",	"mGluR (pan)",	"Na channel",	"PARP-1",	"COX (pan)",	"MAO",	"mTORC1",	"Dopamine D2 receptor",	"a adrenergic receptor (pan)",	"SGLT1, 2",	"PKC (pan)",	"PDE5",	"acetylcholinesterase",	"PI3Ka / DNA-PK",	"PI3Kb",	"GABA-A receptor",	"p53",	"p53",	"PI3Ka",	"PI3Ka/g/d",	"Dopamine receptor D2; 5-HT (pan);Alpha adrenergic receptor 2",	"b1 adrenergic receptor",	"topoisomerase II",	"5-HT 2",	"Na channel",	"Dopamine D2, D3 agonist",	"HMG-CoA reductase",	"PARP-1",	"PBR",	"B-Raf",	"CHRNA4",	"α7 nicotinic receptor ",	"Wnt-b",	"Src kinase (pan)",	"PI3K (pan)",	"Lck, Fyn, Hck",	"Tubulin (pan)",	"IGF-1R",	"Dopamine D3 agonist",	"HMG-CoA reductase",	"Alpha adrenergic  receptor (pan)",	"Sigma receptor agonist",	"Nuclear receptor subfamily 3",	"GR agonist",	"cytochrome P450",	"BTX Na channel",	"b2 adrenergic receptor agonist",	"Dopamine D2 receptor",	"Cholinergic receptor; muscarinic",	"GR agonist",	"Histamine receptor 1",	"Na channel, K channel",	"ESR agonist",	"Na/K ATPase",	"PKCa",	"InhA",	"ENTPD1",	"A1 adenosine receptor",	"HSP90",	"RPL (pan)",	"CDK2, 4, 5",	"Trx-1",	"JNK (pan)",	"DHFR",	"HDAC1",	"NOS",	"Wnt",	"BTK/MNK",	"PIM1 Kinase",	"Dopamine receptor D2; 5-HT (pan);Histamine receptor 1;Cholinergic receptor; muscarinic",	"Arachidonate 5-lipoxygenase",	"NFKB",	"5-HT 2A, 3",	"FLT3",	"Dopamine D2",	"DAG kinase",	"5-HT 2A",	"Proton pump",	"Enkephalinase",	"Dopamine D2",	"HSP90",	"ER (pan)",	"thymidylate synthase ",	"H2 receptor",	"topoisomerase II",	"NMDA",	"SLC18A1/2",	"SIRT1",	"Nuclear receptor subfamily 2",	"Aurora kinase (pan), A3 adenosine receptor",	"DNMT",	"EGFR",	"TP53",	"Viral nucleoside",	"Na channel",	"Sigma receptor",	"GR agonist",	"5-HT 2A, 2C",	"Factor XA",	"5-HT 1",	"5-HT 6",	"NGF",	"GABA-A receptor agonist",	"GK agonist",	"CDK1",	"amyloid β42",	"PDE4",	"Dopamine D2, D3, D4 agonist",	"CDK2, 7, 9",	"PPARG agonist",	"HMG-CoA reductase",	"PKCd",	"CCR2",	"α1A-adrenergic receptor",	"5-HT 4",	"5-HT 4",	"CCR2",	"5-HT 3 agonist",	"5-HT 1A, 1B agonist",	"PARP-1",	"Janus kinase (Jak)",	"SETD8",	"Chk1",	"Sirtuin 1",	"b2 adrenergic receptor agonist",	"eIF2a phosphatase",	"Src, Bcr-Abl",	"5-HT 2B, 2C",	"MAPK",	"MAPKAPK2",	"GABA-A receptor agonist",	"Opioid receptor delta agonist",	"5-HT 2B, 2C",	"5-HT 1B",	"GSK-3 (pan)",	"Chk1",	"NK3",	"CXCR2",	"MAPK",	"5-HT 6",	"5-HT 7",	"TRPV1",	"OX1",	"GSK-3 A",	"ALK4, 5, 7",	"ALK5",	"B-Raf",	"EP1",	"COX-1",	"MAPK",	"Dopamine D1",	"A2a adenosine receptor",	"PAR 1",	"Dopamine receptor D1",	"HDAC",	"Sigma receptor",	"NK1",	"GABA-A receptor",	"SIN3",	"MEK1/2",	"VEGFR2",	"HDM2",	"SERT",	"mGluR5",	"PDE5",	"HMG-CoA reductase",	"STAT1",	"mTORC1",	"DPP-4",	"MDMX",	"Dopamine D1 agonist",	"Dopamine D1, D5 agonist",	"VEGF inhibitor",	"GAT-1",	"STIM1",	"topoisomerase I",	"Aurora kinase A",	"Growth hormone",	"Tyrosine Kinase (broad)",	"5-HT 2A",	" 5-HT 1A, 2A",	"Adenylyl cyclase",	"CCK1",	"5-HT 3 agonist",	"b3 adrenergic receptor agonist",	"SIRT1 agonist",	"Elastase",	"Viral RNA polymerase",	"Kinases (broad)",	"CaMKK",	"c-Met",	"Tyrosine Kinase (broad)",	"VEGFR2",	"VEGFR2",	"Dopamine D2, D3 receptor",	"Tyrosine Kinase (broad)",	"Adrenergic receptor (pan) agonist",	"PPARg",	"PDE5",	"LXR agonist",	"GnRH",	"HDAC 1,2,3,8",	"Calceineurin",	"PDE5",	"MAPK",	"CaCC",	"RARa agonist",	"ER (pan)",	"HSP90",	"PKC (pan)",	"Opioid receptor (pan)",	"FLT3",	"5-HT 4 agonist",	"Angiotensin II receptor",	"mTOR",	"topoisomerase II",	"HIV reverse transcriptase",	"Sirtuin",	"PKCq",	"Histamine receptor 1",	"GR agonist",	"MAO A",	"JAK2",	"PI3Kb/d",	"PI3Kb",	"VEGF inhibitor",	"Ca2+-ATPase",	"Cytochrome P450",	"Enkephalinase",	"70s ribosome",	"Dopamine receptor D2",	"HDAC",	"Kinases (broad)",	"Fumarate reductase",	"SERT agonist",	"30s ribosome",	"Farnesyl transferase",	"Farnesyl transferase",	"VEGFR (pan)",	"a2 adrenergic receptor agonist",	"topoisomerase I",	"ER (pan)",	"mTORC1/2",	"mTORC1/2",	"aminopeptidase (broad)",	"Caspase 3",	"Aurora kinase (pan)",	"IKK-2",	"GABA-A receptor",	"Opioid receptor mu",	"Nociceptin Receptor",	"PDGF",	"5-HT 2A",	"Arachidonate 5-lipoxygenase",	"PDE3",	"acyl Co-A synthatase",	"Nuclear receptor subfamily 3",	"HDAC",	"Akt (pan)",	"ENR",	"Dopamine D2",	"MYC",	"XBP",	"PPARg agonist",	"CHRM4",	"RAR (pan) agonist",	"HDAC6",	"HDAC6",	"BCL-2",	"GSK-3 B",	"EGFR",	"EGFR",	"PDGFR",	"ERK1, 2",	"TNFα",	"PDGFR",	"EGFR",	"EGFR",	"EGFR",	"Tyrosine Kinase (broad)",	"EGFR",	"EGFR",	"EGFR",	"EGFR",	"MEK1/2",	"MEK1/2",	"LAMP2",	"Free radicals",	"Cholinergic receptor, nicotinic agonist",	"Aminopeptidase",	"KCNQ1, 2",	"MMP3",	"G9a",	"COX-2",	"DNA-PK",	"DAT",	"PDE5",	"PARP-1/2",	"B-Raf",	"HSP70",	"Ca channel",	"Peptidyl transferase",	"VAChT",	"CCR5",	"PDE51",	"Cytochrome P450",	"HDAC",	"M5 receptor agonist",	"VEGF inhibitor",	"p38 MAPK",	"MAPK",	"CaM",	"Calmodulin",	"MMP-13",	"Lck, Src",	"N-WASp",	"PI3K (pan)",	"Pfmrk",	"mTORC1",	"mTORC1/2",	"EGFR",	"EGFR",	"Dopamine receptor D1",	"Tyrosine kinase (broad)",	"5-HT 1A",	"TNKS",	"K channel",	"PI3Ka/g/d",	"MAPK7",	"BMK1",	"ER (pan)",	"ROCK-1/2",	"HIF-1a, HIF-2a",	"ES-FLI1",	"mGluR1",	"IL-5 receptor",	"calmodulin",	"M3 receptor",	"PDE3,4",	"Androgen receptor beta 3",	"b3 adrenergic receptor agonist",	"DNMT",	"endothelin receptor type A",	"5-lipooxygenase",	"5-HT 2A",	"estrogen receptor",	"GABA-A receptor agonist",	"GABA-A receptor",	"Adenosine A2a receptor",	"VEGFR1",	"c-Raf",	"Aurora kinase A, B",	"Histamine receptor 2",	"P-glycoprotein",	"PI3K (pan)"];
                     
                     var bol = true;
                     
                     
                 $(document).ready(function(){
                     $(function(){   $('.form-control').val('');
-                        $(".form-control").attr('placeholder',"Search drugs by entering atleast one character of gene name");
-                        $(".form-control").autocomplete({source: availableGenes});});
+                        $(".form-control").attr('placeholder',"Search genes by entering atleast one character of drug name");
+                        $(".form-control").autocomplete({source: availableDrugs});});
                     
                     
                     $('#genebutton').on('click',function(){
                         
                         bol = false;
                         
-                        $(".form-control").attr('placeholder',"Search genes by entering atleast one character of drug name");
+                        $(".form-control").attr('placeholder',"Search drugs by entering atleast one character of gene name");
                         $('.form-control').val('');
                           $('#genes').addClass('btn-success').removeClass('btn-default');
                         $('#drug').addClass('btn-default').removeClass('btn-success');
                         
                         
    
-                        $(".form-control").autocomplete({source: availableDrugs});
+                        $(".form-control").autocomplete({source: availableGenes});
                     
                         
                       
@@ -560,13 +89,13 @@
                         
                         bol = true;
                        
-                        $(".form-control").attr('placeholder',"Search drugs by entering atleast one character of gene name");
+                        $(".form-control").attr('placeholder',"Search genes by entering atleast one character of drug name");
                         
                         $('.form-control').val('');
                         $('#drug').addClass('btn-success').removeClass('btn-default');
                         $('#genes').addClass('btn-default').removeClass('btn-success'); 
                         
-                        $(".form-control").autocomplete({source: availableGenes});
+                        $(".form-control").autocomplete({source: availableDrugs});
                         
                         
                     });
@@ -595,30 +124,9 @@
 
                                  if(bol){
                                      
-                                       var target_value = $('#input_target').val()
-                        if(target_value == ''){
-                            alert("The target is not entered");
-                            
-                        }
-                        $.ajax({
-
-                           
-                            type: 'GET',
-                            dataType: 'json',
-                            url: 'http://34.196.18.237:9000/drugs?target='+target_value,
-                            success: function (data) {
-                                $('#drugs_list').html('');
-                                $.each(data,function(i,drug){
-                                   $('#drugs_list').append('<li style="font-family: cursive;font-size: 150%;" class="list-group-item list-group-item-success">'+drug.drug_name+'</li>') 
-                                });
-                            }
-
-                        });
-                                     
-                                 }else if(!bol){
-                        var drug_value = $('#input_target').val()
+                                       var drug_value = $('#input_target').val()
                         if(drug_value == ''){
-                            alert("The drug is not entered");
+                            alert("The target is not entered");
                             
                         }
                         $.ajax({
@@ -631,6 +139,27 @@
                                 $('#drugs_list').html('');
                                 $.each(data,function(i,drug){
                                    $('#drugs_list').append('<li style="font-family: cursive;font-size: 150%;" class="list-group-item list-group-item-success">'+drug.target+'</li>') 
+                                });
+                            }
+
+                        });
+                                     
+                                 }else if(!bol){
+                        var target_val = $('#input_target').val()
+                        if(target_val == ''){
+                            alert("The drug is not entered");
+                            
+                        }
+                        $.ajax({
+
+                           
+                            type: 'GET',
+                            dataType: 'json',
+                            url: 'http://34.196.18.237:9000/drugs?target='+target_val,
+                            success: function (data) {
+                                $('#drugs_list').html('');
+                                $.each(data,function(i,drug){
+                                   $('#drugs_list').append('<li style="font-family: cursive;font-size: 150%;" class="list-group-item list-group-item-success">'+drug.drug_name+'</li>') 
                                 });
                             }
 
@@ -684,7 +213,9 @@
         
         <button type="button" id="srch" class="btn btn-success"><span id="btextsearch">Search</span></button>
         <button type="button" id="reset" class="btn btn-info"><span id="btextreset">Reset</span></button>
-            
+<br></br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a id="batchaction" href="http://34.196.18.237:9001/">Click Here to Upload Batch File</a></p>
+           
     
         </div>
     
